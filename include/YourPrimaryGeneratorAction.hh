@@ -4,6 +4,8 @@
 
 #include "G4VUserPrimaryGeneratorAction.hh"
 #include "globals.hh"
+#include "G4Types.hh"
+#include "G4String.hh"
 
 class YourDetectorConstruction;
 class G4ParticleGun;
@@ -16,6 +18,8 @@ class YourPrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction {
 		virtual ~YourPrimaryGeneratorAction();
 		
 		virtual void GeneratePrimaries(G4Event* anEvent);
+		
+		G4ParticleGun*  GetParticleGun() { return fParticleGun; } 
 		
 		void SetDefaultKinematic();
 		void UpdatePosition();

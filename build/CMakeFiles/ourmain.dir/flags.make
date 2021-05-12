@@ -6,5 +6,5 @@ CXX_FLAGS = -W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-stri
 
 CXX_DEFINES = -DG4LIB_BUILD_DLL -DG4MULTITHREADED -DG4UI_USE -DG4VERBOSE -DG4VIS_USE -DG4_STORE_TRAJECTORY -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/nfs/fanae/user/vichuca93/g4work/MyFirstApplication/include -isystem /nfs/fanae/geant4_releases/geant4.10.05-install/include/Geant4 -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/./mkspecs/linux-g++ -isystem /usr/include/qt5/QtPrintSupport 
+CXX_INCLUDES = -I/nfs/fanae/user/vichuca93/g4work/Geant4_UniOvi_FPFE/include -isystem /nfs/fanae/geant4_releases/geant4.10.05-install/include/Geant4 -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/./mkspecs/linux-g++ -isystem /usr/include/qt5/QtPrintSupport 
 

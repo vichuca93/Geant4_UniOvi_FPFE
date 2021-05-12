@@ -18,7 +18,7 @@ class YourDetectorConstruction : public G4VUserDetectorConstruction {
 		virtual G4VPhysicalVolume* Construct();
 	   
 		void SetTargetMaterial(const G4String& matName);
-		const G4Material* getTargetMaterial() const {return fTargetMaterial;}
+		const G4Material* GetTargetMaterial() const {return fTargetMaterial;}
 	   
 		void SetTargetThickness(const G4double thick) {fTargetThickness = thick;}
 		G4double GetTargetThickness() const {return fTargetThickness;}

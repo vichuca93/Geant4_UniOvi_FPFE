@@ -39,17 +39,18 @@ runManager->SetUserInitialization(new YourActionInitialization(detector));
 
 // Inicializo el run
 runManager->Initialize();
+
 // anadimos verbosity
 //G4EventManager::GetEventManager()->GetTrackingManageer()->SetVerboseLevel(1);
 // corremos 10 eventos
-runManager->BeamOn(10);
+//runManager->BeamOn(10);
 // borramos el RunManager
 
 
 //Anadimos visualizacion
 G4VisManager* visManager = new G4VisExecutive;
 visManager->Initialize();
-delete visManager;
+//delete visManager;
 
 G4UImanager* UImanager = G4UImanager::GetUIpointer();
   if (!ui) {

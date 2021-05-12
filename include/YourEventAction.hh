@@ -13,8 +13,8 @@ class YourEventAction : public G4UserEventAction {
 		virtual void BeginOfEventAction(const G4Event* anEvent);
 		virtual void EndOfEventAction(const G4Event* anEvent);
 		
-		void Add(G4double edep, G4double trackL) {
-			fEdepPerEvt += edep;
+		void Add(G4double Edep, G4double trackL) {
+			fEdepPerEvt += Edep;
 			fChTrackLengthPerEvt += trackL;
 		}
 	

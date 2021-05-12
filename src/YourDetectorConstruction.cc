@@ -63,10 +63,10 @@ G4VPhysicalVolume* YourDetectorConstruction::Construct() {
 	G4double zet = 1.0;
 	G4double amass = 1.01*g/mole;
 	G4double density = universe_mean_density;
-	G4double pressure = 3.e-18*pascal;
+	G4double pressure = 3.0E-18*pascal;
 	G4double temperature = 2.73*kelvin;
 	
-	G4Material* materialWorld = new G4Material("World", zet, amass, density, kStateGas, temperature, pressure);
+	G4Material* materialWorld = new G4Material("Galactic", zet, amass, density, kStateGas, temperature, pressure);
 	
 	// Target
 	G4Element* elO = new G4Element("Oxygen", "O", 8.00, 16*g/mole);

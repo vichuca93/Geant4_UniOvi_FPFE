@@ -12,15 +12,15 @@ YourSteppingAction::YourSteppingAction(YourDetectorConstruction* det, YourEventA
     fYourDetector(det),
     fYourEventAction(evtAction) { }
 
-
 YourSteppingAction::~YourSteppingAction() {}
+
 void YourSteppingAction::UserSteppingAction(const G4Step* theStep) {
  
   if (theStep->GetPreStepPoint()->GetTouchableHandle()->GetVolume() 
       != fYourDetector->GetTargetPhysicalVolume() )  return; 
 
   // Energia depositada
-  auto eDep   = theStep->GetTotalEnergyDeposit();
+  auto Edep = theStep->GetTotalEnergyDeposit();
   
   // Longitud de la traza (profundidad de penetracion (?)
   auto trackL = 0.;   
@@ -29,5 +29,5 @@ void YourSteppingAction::UserSteppingAction(const G4Step* theStep) {
   }
   
   // Extraemos la info en un EventAction
-  fYourEventAction->Add( eDep, trackL );
+  fYourEventAction->Add( Edep, trackL );
 }

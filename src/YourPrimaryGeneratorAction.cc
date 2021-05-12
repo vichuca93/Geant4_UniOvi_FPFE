@@ -18,8 +18,8 @@ YourPrimaryGeneratorAction::~YourPrimaryGeneratorAction() {
 	delete fParticleGun;
 }
 	
-void YourPrimaryGeneratorAction::GeneratePrimaries(G4Event* evt) {
-	fParticleGun->GeneratePrimaryVertex(evt);
+void YourPrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
+	fParticleGun->GeneratePrimaryVertex(anEvent);
 }
 
 void YourPrimaryGeneratorAction::SetDefaultKinematic() {
