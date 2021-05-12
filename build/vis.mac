@@ -23,9 +23,9 @@
 # ==============================================================================
 # set the target thickness to match the experimental one: 
 #/yourApp/det/setTargetThickness 5.6 um
-/yourApp/det/setTargetThickness 22.4 um
+#/yourApp/det/setTargetThickness 22.4 um
 #/yourApp/det/setTargetThickness 56 um
-#/yourApp/det/setTargetThickness 112 um
+/yourApp/det/setTargetThickness 112 um
 
 # set the target material to match the experimental one: Silicon
 /yourApp/det/setTargetMaterial G4_Si

@@ -29,7 +29,7 @@ YourRunAction::YourRunAction(YourPrimaryGeneratorAction* prim)
   analysisManager->SetNtupleMerging(true);
 
   // Creamos los histogramas
-  analysisManager->CreateH1("Edep","Edep in target", 100, 0., 100*keV);
+  analysisManager->CreateH1("Edep","Edep in target", 100, 0., 50*keV);
   analysisManager->CreateH1("trackL","trackL in target", 100, 0., 20*cm);
 
   // Creamos los ntuples
