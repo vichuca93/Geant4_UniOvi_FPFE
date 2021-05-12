@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
 
 G4UIExecutive* ui=0;
   if (argc ==1 ){
-    ui = new G4UIExecutive(argc,argv, "tcsh");
+    ui = new G4UIExecutive(argc,argv, "qt");
   }
   
 // Declaro primero el RunManager
@@ -38,7 +38,7 @@ runManager->SetUserInitialization(pl);
 runManager->SetUserInitialization(new YourActionInitialization(detector));
 
 // Inicializo el run
-runManager->Initialize();
+//runManager->Initialize();
 
 // anadimos verbosity
 //G4EventManager::GetEventManager()->GetTrackingManageer()->SetVerboseLevel(1);

@@ -69,16 +69,19 @@ G4VPhysicalVolume* YourDetectorConstruction::Construct() {
 	G4Material* materialWorld = new G4Material("Galactic", zet, amass, density, kStateGas, temperature, pressure);
 	
 	// Target
-	G4Element* elO = new G4Element("Oxygen", "O", 8.00, 16*g/mole);
-	G4Element* elSi = new G4Element("Silice", "Si", 14.00, 28.085*g/mole);
-	G4Material* matSiO2 = new G4Material("SilOxide", 2.634*g/cm3, 2);
-		matSiO2->AddElement(elSi, 1);
-		matSiO2->AddElement(elO, 2);
-	G4Material* materialTarget = matSiO2;
+	//G4Element* elO = new G4Element("Oxygen", "O", 8.00, 16*g/mole);
+	//G4Element* elSi = new G4Element("Silice", "Si", 14.00, 28.085*g/mole);
+	//G4Material* matSiO2 = new G4Material("SilOxide", 2.634*g/cm3, 2);
+	//	matSiO2->AddElement(elSi, 1);
+	//	matSiO2->AddElement(elO, 2);
+	//G4Material* materialTarget = matSiO2;
+	
+	G4Material* materialTarget = fTargetMaterial;
+	
 	
 // II. Creo la geometria
 	// Definiendo los tamaños y posicion inicial del haz
-	G4double targetXSize = 1.0*cm;
+	G4double targetXSize = fTargetThickness;
 	G4double targetYSize = 1.25*targetXSize;
 	G4double worldXSize = 1.1*targetXSize;
 	G4double worldYSize = 1.1*targetYSize;
